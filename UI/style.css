@@ -1,0 +1,110 @@
+
+html, body, div{
+  padding:0;
+  margin:0;
+}
+
+.faded {
+    opacity: 0.1;
+    transition: 0.3s opacity;
+  }
+  .highlight {
+    opacity: 1;
+  }
+
+  path.link {
+    fill: none;
+    stroke: #666;
+    stroke-width: 1.5px;
+  }
+  path.link.depends {
+    stroke: #005900;
+  }
+
+  circle {
+    fill: #ffff99;
+    stroke: #191900;
+    stroke-width: 1.5px;
+  }
+  circle.application {
+    fill: #cce5ff;
+    stroke: #003366;
+  }
+
+  circle.communicationcenter {
+    fill: #5900ff;
+    stroke: #003366;
+  }
+
+  circle.customer {
+    fill: #ff0000;
+    stroke: #003366;
+  }
+
+  circle.customers {
+    fill: #ff0000;
+    stroke: #003366;
+  }
+
+  circle.jrc {
+    fill: #ff0000;
+    stroke: #003366;
+  }
+
+  circle.consentmanagement {
+    fill: #ff0000;
+    stroke: #003366;
+  }
+
+  circle.regulatedmarkets {
+    fill: #09ff00;
+    stroke: #003366;
+  }
+
+  circle.responsiblegaming {
+    fill: #a09d00;
+    stroke: #003366;
+  }
+
+  circle.infrastructure {
+    fill: #ff00ff;
+    stroke: #003366;
+  }
+
+  circle.package {
+    fill: #ffe5e5;
+    stroke: #660000;
+  }
+
+  circle.selected {
+    stroke: #ff6666FF !important;
+    stroke-width: 3px;
+    animation: selected 2s infinite alternate ease-in-out;
+  }
+
+  @keyframes selected {
+    from {
+      stroke-width: 5px;
+      r: 26;
+    }
+    to {
+      stroke-width: 1px;
+      r: 30;
+    }
+  }
+
+  text {
+    font: 10px sans-serif;
+    pointer-events: none;
+    text-shadow: 0 1px 0 #fff, 1px 0 0 #fff, 0 -1px 0 #fff, -1px 0 0 #fff;
+  }
+
+  rect.caption {
+    fill: #CCCCCCAC;
+    stroke: #666;
+    stroke-width: 1px;
+  }
+  text.caption {
+    font-size: 14px;
+    font-weight: bold;
+  }

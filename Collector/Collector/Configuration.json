@@ -1,0 +1,9 @@
+{
+  "ResultPath": "./data.json",
+  "Folders": [  ],
+  "Map": {
+      "": "Other"
+  },
+  "Ignore": [],
+  "IncludeOnly": [ ]
+}
