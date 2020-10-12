@@ -1,0 +1,274 @@
+var CollectorData = {
+  "nodes": [
+  	{
+      "id": "Techsson",
+      "name": "Techsson",
+      "class": "database"
+    },	
+	{
+      "id": "ResponsibleGaming",
+      "name": "ResponsibleGaming",
+      "class": "database"
+    },
+	
+    {
+      "id": "Techsson.API.ResponsibleGaming",
+      "name": "Techsson.API.ResponsibleGaming",
+      "class": "api"
+    },
+    {
+      "id": "Techsson.Platform.ResponsibleGaming.Configuration.WebApi",
+      "name": "Techsson.Platform.ResponsibleGaming.Configuration.WebApi",
+      "class": "api"
+    },
+	{
+      "id": "Techsson.ControlPanel.ResponsibleGaming",
+      "name": "Techsson.ControlPanel.ResponsibleGaming",
+      "class": "controlpanel"
+    },
+	{
+      "id": "Techsson.Platform.ResponsibleGaming.DepositLimit",
+      "name": "Techsson.Platform.ResponsibleGaming.DepositLimit",
+      "class": "nsb"
+    },
+	{
+      "id": "Techsson.Platform.ResponsibleGaming.SelfExclusion",
+      "name": "Techsson.Platform.ResponsibleGaming.SelfExclusion",
+      "class": "nsb"
+    },
+	{
+      "id": "Techsson.Platform.ResponsibleGaming.WageringLimit",
+      "name": "Techsson.Platform.ResponsibleGaming.WageringLimit",
+      "class": "nsb"
+    },
+	{
+      "id": "ResponsibleGaming.Queries",
+      "name": "ResponsibleGaming.Queries",
+      "class": "nuget"
+    },
+	{
+      "id": "ResponsibleGaming.WebApi",
+      "name": "ResponsibleGaming.WebApi",
+      "class": "api"
+    },
+	
+	{
+      "id": "Techsson.API.Customer",
+      "name": "Techsson.API.Customer",
+      "class": "api"
+    },
+	{
+      "id": "Techsson.Platform.Customer",
+      "name": "Techsson.Platform.Customer",
+      "class": "nsb"
+    },
+	{
+      "id": "Techsson.Customer.WebApi",
+      "name": "Techsson.Customer.WebApi",
+      "class": "api"
+    },
+	{
+      "id": "Techsson.PaymentGpi",
+      "name": "Techsson.PaymentGpi",
+      "class": "api"
+    },
+	{
+      "id": "OBG.API",
+      "name": "OBG.API",
+      "class": "api"
+    },
+	{
+      "id": "SiteCore.SiteIntegaration",
+      "name": "SiteCore.SiteIntegaration",
+      "class": "nuget"
+    },
+	{
+      "id": "DataWarehouse",
+      "name": "DataWarehouse",
+      "class": "component"
+    },	
+	{
+      "id": "RegulatedMarkets.Italy",
+      "name": "RegulatedMarkets.Italy",
+      "class": "nsb"
+    },	
+	{
+      "id": "JRC.Spain.UserSync",
+      "name": "JRC.Spain.UserSync",
+      "class": "component"
+    },
+	{
+      "id": "Techsson.Platform.Wallet",
+      "name": "Techsson.Platform.Wallet",
+      "class": "nsb"
+    },
+	{
+      "id": "Techsson.Platform.Configuration.Brand.WebApi",
+      "name": "Techsson.Platform.Configuration.Brand.WebApi",
+      "class": "api"
+    },
+	{
+      "id": "Techsson.Platform.Channels.ExactTarget",
+      "name": "Techsson.Platform.Channels.ExactTarget",
+      "class": "nsb"
+    },
+	{
+      "id": "Techsson.Platform.Gaming.Session",
+      "name": "Techsson.Platform.Gaming.Session",
+      "class": "nsb"
+    }
+  ],
+ "links":  [
+   
+	{
+      "source": "Techsson.API.Customer",
+      "target": "ResponsibleGaming.Queries",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.Platform.Customer",
+      "target": "Techsson.API.ResponsibleGaming",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.Platform.Customer",
+      "target": "Techsson.Platform.ResponsibleGaming.DepositLimit",
+      "type": "Link"
+    },	
+	{
+      "source": "Techsson.Customer.WebApi",
+      "target": "ResponsibleGaming.Queries",
+      "type": "Link"
+    },		
+	{
+      "source": "Techsson.PaymentGpi",
+      "target": "ResponsibleGaming.WebApi",
+      "type": "Link"
+    },		
+	{
+      "source": "Techsson.PaymentGpi",
+      "target": "Techsson.Platform.ResponsibleGaming.Configuration.WebApi",
+      "type": "Link"
+    },
+		{
+      "source": "DataWarehouse",
+      "target": "ResponsibleGaming.WebApi",
+      "type": "Link"
+    },
+	{
+      "source": "OBG.API",
+      "target": "Techsson.API.ResponsibleGaming",
+      "type": "Link"
+    },
+	{
+      "source": "SiteCore.SiteIntegaration",
+      "target": "ResponsibleGaming.Queries",
+      "type": "Link"
+    },				
+	{
+      "source": "RegulatedMarkets.Italy",
+      "target": "Techsson.API.ResponsibleGaming",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.Platform.Wallet",
+      "target": "ResponsibleGaming.WebApi",
+      "type": "Link"
+    },	
+	{
+      "source": "Techsson.API.ResponsibleGaming",
+      "target": "Techsson",
+      "type": "Link"
+    },	
+	{
+      "source": "Techsson.API.ResponsibleGaming",
+      "target": "ResponsibleGaming",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.ControlPanel.ResponsibleGaming",
+      "target": "Techsson",
+      "type": "Link"
+    },	
+	{
+      "source": "Techsson.ControlPanel.ResponsibleGaming",
+      "target": "ResponsibleGaming",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.Platform.ResponsibleGaming.DepositLimit",
+      "target": "Techsson",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.Platform.ResponsibleGaming.SelfExclusion",
+      "target": "Techsson",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.Platform.ResponsibleGaming.WageringLimit",
+      "target": "ResponsibleGaming",
+      "type": "Link"
+    }	,
+	{
+      "source": "ResponsibleGaming.Queries",
+      "target": "Techsson",
+      "type": "Link"
+    },	
+	{
+      "source": "ResponsibleGaming.Queries",
+      "target": "ResponsibleGaming",
+      "type": "Link"
+    }	,
+	{
+      "source": "ResponsibleGaming.WebApi",
+      "target": "Techsson",
+      "type": "Link"
+    },	
+	{
+      "source": "ResponsibleGaming.WebApi",
+      "target": "ResponsibleGaming",
+      "type": "Link"
+    },	
+	{
+      "source": "ResponsibleGaming.WebApi",
+      "target": "Techsson.Customer.WebApi",
+      "type": "Link"
+    },	
+	{
+      "source": "ResponsibleGaming.WebApi",
+      "target": "Techsson.Platform.Configuration.Brand.WebApi",
+      "type": "Link"
+    },
+	 {
+      "source": "Techsson.Platform.ResponsibleGaming.WageringLimit",
+      "target": "Techsson.Platform.Wallet",
+      "type": "Link"
+    },	
+	{
+      "source": "Techsson.Platform.ResponsibleGaming.SelfExclusion",
+      "target": "RegulatedMarkets.Italy",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.Platform.ResponsibleGaming.SelfExclusion",
+      "target": "Techsson.Platform.Channels.ExactTarget",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.Platform.ResponsibleGaming.SelfExclusion",
+      "target": "Techsson.Platform.Gaming.Session",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.API.ResponsibleGaming",
+      "target": "Techsson.Platform.ResponsibleGaming.SelfExclusion",
+      "type": "Link"
+    },
+	{
+      "source": "Techsson.Platform.ResponsibleGaming.DepositLimit",
+      "target": "RegulatedMarkets.Italy",
+      "type": "Link"
+    }
+]
+};

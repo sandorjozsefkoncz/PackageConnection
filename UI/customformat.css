@@ -1,10 +1,36 @@
 
+  circle.database {
+    fill: red;
+    stroke: white;
+  }  
   circle.api {
-    fill: #cce5ff;
+    fill: green;
+    stroke: white;
+  }
+  circle.component {
+    fill: lightblue;
+    stroke: #003366;
+  }
+
+
+  circle.nuget {
+    fill: brown;
+    stroke: #003366;
+  }
+
+  circle.controlpanel {
+    fill: gray;
+    stroke: #003366;
+  }
+
+  circle.nsb {
+    fill: purple;
+    stroke: #003366;
+  }  
+  
+  circle.other {
+    fill: yellow;
     stroke: #003366;
   }
   
-  circle.other {
-    fill: #ffffff;
-    stroke: #003366;
-  }
+  

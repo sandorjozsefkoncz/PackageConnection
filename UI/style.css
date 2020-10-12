@@ -5,8 +5,7 @@ html, body, div{
 }
 
 .faded {
-    opacity: 0.1;
-    transition: 0.3s opacity;
+    opacity: 0.1;   
   }
   .highlight {
     opacity: 1;
@@ -26,56 +25,7 @@ html, body, div{
     stroke: #191900;
     stroke-width: 1.5px;
   }
-  circle.application {
-    fill: #cce5ff;
-    stroke: #003366;
-  }
-
-  circle.communicationcenter {
-    fill: #5900ff;
-    stroke: #003366;
-  }
-
-  circle.customer {
-    fill: #ff0000;
-    stroke: #003366;
-  }
-
-  circle.customers {
-    fill: #ff0000;
-    stroke: #003366;
-  }
-
-  circle.jrc {
-    fill: #ff0000;
-    stroke: #003366;
-  }
-
-  circle.consentmanagement {
-    fill: #ff0000;
-    stroke: #003366;
-  }
-
-  circle.regulatedmarkets {
-    fill: #09ff00;
-    stroke: #003366;
-  }
-
-  circle.responsiblegaming {
-    fill: #a09d00;
-    stroke: #003366;
-  }
-
-  circle.infrastructure {
-    fill: #ff00ff;
-    stroke: #003366;
-  }
-
-  circle.package {
-    fill: #ffe5e5;
-    stroke: #660000;
-  }
-
+  
   circle.selected {
     stroke: #ff6666FF !important;
     stroke-width: 3px;
